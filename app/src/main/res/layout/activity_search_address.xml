@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20sp"
+    android:orientation="vertical"
+    tools:context=".activity.SearchAddressActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="도로명주소의 숫자까지 입력해주세요\n예) 서울시립대로 163"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:layout_marginRight="10sp"
+            android:hint="도로명 주소를 입력하세요"
+            />
+
+        <Button
+            android:id="@+id/getAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_shape"
+            android:textColor="@android:color/white"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sublayer"
+        android:orientation="vertical">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/best_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="우리 모임 지각왕"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/best_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="지각을 하면 내 선호도가 반영되지 않아요 !"
+        android:textColor="@color/quantum_black_text"
+        android:layout_margin="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/best_title"/>
+
+    <TextView
+        android:id="@+id/resetDatetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="날짜"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/best_info"/>
+
+    <TextView
+        android:id="@+id/nullText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="출석 기록이 없습니다."
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/attend_show"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/resetDatetv"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/best_title"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="40sp"
+        android:padding="10sp"
+        android:background="@drawable/reset"
+        android:visibility="gone"
+
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mmmmeeting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="우리 지금 만나"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:label">
+        <activity android:name=".activity.newLeaderActivity"></activity>
+        <activity android:name=".activity.inviteActivity" />
+        <activity android:name=".activity.MeetingDeleteActivity" />
+
+        <activity android:name=".activity.MeetingAttendActivity" />
+        <activity android:name=".activity.SignActivity">
+        </activity>
+        <activity android:name=".activity.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ToolbarActivity" />
+        <activity android:name=".activity.MeetingActivity" />
+        <activity android:name=".activity.GalleryActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.MakeMeetingActivity" />
+        <activity android:name=".activity.MakePostActivity" />
+        <activity android:name=".activity.MemberInitActivity" />
+        <activity android:name=".activity.ContentBoardActivity" />
+        <activity android:name=".activity.MakeScheduleActivity"/>
+        <activity android:name=".activity.ContentScheduleActivity"/>
+        <activity android:name=".activity.MiddlePlaceActivity"/>
+        <activity android:name=".activity.MeetingInfoActivity"/>
+        <activity android:name=".activity.SearchPlaceActivity"/>
+        <activity android:name=".activity.SearchAddressActivity"/>
+        <activity android:name=".activity.CalendarActivity"/>
+        <activity android:name=".activity.PlaceChoiceActivity"/>
+        <activity android:name=".activity.PlaceListActivity"/>
+        <activity android:name=".activity.CheckLateActivity"/>
+        <activity android:name=".activity.NoticeActivity"/>
+        <activity android:name=".activity.VoteActivity"/>
+        <activity android:name=".activity.CurrentMapActivity"/>
+        <activity android:name=".activity.AlarmActivity"/>
+        <activity android:name=".activity.EditScheduleActivity"/>
+
+        <receiver android:name=".DeviceBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".AlarmReceiver" />
+    
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="YOUR_API_KEY"/>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_TYPE"
+            android:value="gov" />
+
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />   
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

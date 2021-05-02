@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layout_search"
+    tools:context="activity.SearchPlaceActivity">
+
+    <fragment android:id="@+id/search_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/show_map"
+        tools:context=".SearchMapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_weight="0.2"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+        
+
+        <Button
+            android:id="@+id/btn_vote"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/back_name"
+            android:text="투표 추가" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back_name"
+            android:text="투표 삭제" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_schedule">
+
+
+    <LinearLayout
+        android:id="@+id/schedule_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="약속 내용"
+                android:layout_margin="20sp"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+             <com.example.mmmmeeting.view.ReadScheduleView_new
+                android:id="@+id/readScheduleView_new"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="20sp">
+
+            </com.example.mmmmeeting.view.ReadScheduleView_new>
+
+
+            <Button
+                android:id="@+id/calendarBtn"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20sp"
+                android:background="@drawable/btn_shape2"
+                android:textColor="@android:color/black"
+                android:ems="10"
+                android:text="언제?"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/middleBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_shape2"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:text="중간지점"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/searchBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_shape2"
+                    android:textColor="@android:color/black"
+                    android:ems="10"
+                    android:text="장소 검색"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/attendanceBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_shape"
+                    android:text="출석체크"
+                    android:layout_margin="20dp"
+                    android:textColor="@android:color/white"
+                    />
+                <Button
+                    android:id="@+id/voteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_shape"
+                    android:text="장소 투표"
+                    android:layout_margin="20dp"
+                    android:textColor="@android:color/white"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
