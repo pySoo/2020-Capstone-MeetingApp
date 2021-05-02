@@ -1,4 +1,5 @@
-# MMMMeeting - 우리 지금 만나 (Convert Java to Kotlin & Code Refactoring)
+# MMMMeeting - 우리 지금 만나
+## (Convert Java to Kotlin & Code Refactoring ver.)
 [![img](https://img.shields.io/badge/Firebase-Firestore-red)](https://firebase.google.com/products/firestore?hl=ko)
 [![img](https://img.shields.io/badge/Firebase-Firestorage-red)](https://firebase.google.com/products/storage?hl=ko)
    
